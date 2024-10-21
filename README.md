@@ -17,24 +17,25 @@ This file offers a wide format version of the eviction moratoria data, consolida
 
 ## Methodology
 
-### Eviction Moratoria Database Development
-This project builds upon the foundational work of Benfer et al., which cataloged COVID-19 eviction moratoria across the U.S. Both datasets capture actions taken by governors, legislators, and local authorities, with ours capturing as well as non-COVID-19 measures such as cold-weather eviction and utility disconnection bans. Our motivation for creating our own data was because we noticed discrepancies between what was in early versions of Benfer et al.'s data and what we were interested in coding--we were most interested in knowing when any action resulted in the stoppage of evictions or disconnections regardless of whether it was specific to the pandemic. 
+This project builds upon the foundational work of Benfer et al., which cataloged COVID-19 eviction moratoria across the U.S. While both datasets document actions taken by governors, legislators, and local authorities, our dataset expands to include non-COVID-19 measures such as cold-weather eviction bans and utility disconnection protections. Our decision to create an independent dataset arose from discrepancies we identified in earlier versions of Benfer et al.'s data. Specifically, we were interested in capturing any action that resulted in the suspension of evictions or utility disconnections, regardless of whether it was tied to the pandemic.
 
-### Utility Disconnection Policies (files to be added)
-In addition to eviction moratoria, we examined utility disconnection policies, particularly non-disconnection measures during extreme temperatures (both high and low). Our data incorporates these seasonal disconnection protections, which vary by state and are typically enforced during certain months to protect vulnerable populations. For more details, see: Government compilation of state seasonal disconnection policies.
+In addition to eviction moratoria, we examined utility disconnection policies (files to be updated with these later), particularly non-disconnection measures during extreme temperatures (both high and low). Our data incorporates these seasonal disconnection protections, which vary by state and are typically enforced during certain months to protect vulnerable populations. For more details, see: Government compilation of state seasonal disconnection policies. We also aimed to account for whether the utilities commissions that acted had the authority to regulate both private and public utilities within a given area. Utility commissions often have limited jurisdiction, meaning their regulatory actions may apply only to specific types of utilities, typically private utilities, while public utilities, such as those run by municipalities or cooperatives, may fall outside their scope. In many cases, whether protections were enforced in a particular county depended on whether the area was primarily served by a private utility, which falls under the commission's regulatory oversight, or by a public utility, which may operate independently of state-level regulation. This distinction was critical in determining whether moratoria or other consumer protections applied in a given region.
 
 Our process involved:
-- Reviewing each state's policies in-depth (e.g., COVID-related, cold weather bans, extreme weather protections).
-- Referencing orginal data sources (e.g., the orders, legislation, etc.) to create specific citations to them to document our decisions and verifying data accuracy. 
 
-The primary purpose of our database is to create a more comprehensive picture of eviction moratoria across all U.S. states, covering measures related to both the COVID-19 pandemic and other emergency conditions.
+- Reviewing each state's policies in-depth (e.g., COVID-related, cold weather bans, extreme weather protections).
+- Referencing orginal data sources (e.g., the orders, legislation, etc.) to create specific citations to them to document our decisions and verifying data accuracy.
+- Accounting for whether utility disconnection policies applied to private or public utilities (or other limitations on the scope of a specific order on utility disconnections). 
+
+The primary purpose of our database is to create a more comprehensive picture of eviction and utility disconnection moratoria across all U.S. states, covering measures related to both the COVID-19 pandemic and other emergency conditions.
 
 ## R Code
 
-The R scripts used to clean and process the eviction moratoria and utility disconnection data are also available in this repository. The code includes data transformation steps for both long and wide formats, ensuring traceability of the cleaning process.
+The R scripts used to clean and process the eviction moratoria (and utility disconnection data) are also available in this repository. The code includes data transformation steps for both long and wide formats, ensuring traceability of the cleaning process.
 
-## Citations
+## Citations to Other Work
 
+- Benfer, Emily, and Koehler, Robert. Eviction Moratoria & Housing Policy: Federal, State, Commonwealth, and Territory: 2023.02.01 Moratoria  Supportive Measures Datasets.xlsx. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2023-02-06. https://doi.org/10.3886/E157201V2-139166. 
 
 ## Contact
 
