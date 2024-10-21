@@ -1,10 +1,10 @@
-#COVID-19 Eviction Moratoria and Utility Disconnection Policies
+COVID-19 Eviction Moratoria and Utility Disconnection Policies
 
-##Overview
+Overview
 
 This repository contains data and code related to a comprehensive study of eviction moratoria and utility disconnection policies implemented in response to the COVID-19 pandemic and other emergency conditions, including extreme weather. The goal of the study is to provide a detailed understanding of housing stabilization policies across the United States, expanding beyond COVID-specific measures to include broader eviction prevention and utility disconnection protections.
 
-##Files
+Files
 
 1. jowers_state_evic_policies.xlsx
 This file contains the full dataset on state-level eviction moratoria, including citations and explanations for any differences between our dates and those used in Benfer et al.'s seminal analysis. The dataset captures actions taken by governors, legislators, and local authorities, as well as non-COVID-19 measures such as cold-weather eviction bans.
@@ -15,7 +15,7 @@ This file presents the eviction moratoria data in a long format, focusing on the
 3. wide_data.csv
 This file offers a wide format version of the eviction moratoria data, consolidating key dates for each state into a more compact representation. It is useful for cross-state comparisons or more streamlined analyses.
 
-##Methodology
+Methodology
 
 Eviction Moratoria Database Development
 This project builds upon the foundational work of Benfer et al., which cataloged COVID-19 eviction moratoria across the U.S. Our enhanced database extends this work by:
@@ -32,13 +32,13 @@ State-level and state-by-week fixed effects were employed in our analysis to abs
 
 For more details, see: Government compilation of state seasonal disconnection policies.
 
-##R Code
+R Code
 
 The R scripts used to clean and process the eviction moratoria and utility disconnection data are also available in this repository. The code includes data transformation steps for both long and wide formats, ensuring traceability of the cleaning process.
 
-##Citations
+Citations
 
 
-##Contact
+Contact
 
 For questions or further information, please contact Kay Jowers at kay.jowers@duke.edu.
